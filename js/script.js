@@ -36,4 +36,5 @@ function createSquare(number) {
     square.classList.add('justify-content-center');
     square.classList.add('align-items-center');
     square.innerHTML = `<span>${number}</span>`;
+    return square;
 }
