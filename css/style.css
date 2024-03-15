@@ -4,8 +4,8 @@ body {
 
 #ms-grid,
 .ms-container {
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
 }
 
 .ms-square {
@@ -25,6 +25,15 @@ body {
 .ms-square-hard {
     width: calc(100% / 7);
     height: calc(100% / 7);
+}
+
+@media screen and (min-width: 576px) {
+
+    #ms-grid,
+    .ms-container {
+        width: 25rem;
+        height: 25rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
