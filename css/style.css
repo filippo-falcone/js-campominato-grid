@@ -1,5 +1,13 @@
-body {
-    height: 100dvh;
+header {
+    height: 4.75rem;
+}
+
+main {
+    height: calc(100dvh - 4.75rem - 3.5rem);
+}
+
+footer {
+    height: 3.5rem;
 }
 
 #ms-grid,
