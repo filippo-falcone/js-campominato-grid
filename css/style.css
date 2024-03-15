@@ -1,0 +1,23 @@
+#ms-grid {
+    width: 37.5rem;
+    height: 37.5rem;
+}
+
+.ms-square {
+    border: 2px solid black;
+}
+
+.ms-square-easy {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.ms-square-medium {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.ms-square-hard {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
