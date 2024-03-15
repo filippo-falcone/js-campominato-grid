@@ -23,5 +23,17 @@ const playButton = document.querySelector('#play-btn');
 playButton.addEventListener('click', function () {
     const mainGrid = document.querySelector('#ms-grid');
     mainGrid.classList.remove('d-none');
-    console.log(mainGrid);
 });
+/* FUNCTIONS */
+// Funzione che genera un quadrato
+// number: dato di tipo numerico
+// return: elemento nel DOM rappresentante un quadrato
+function createSquare(number) {
+    const square = document.createElement('div');
+    square.classList.add('ms-square');
+    square.classList.add('ms-square-easy');
+    square.classList.add('d-flex');
+    square.classList.add('justify-content-center');
+    square.classList.add('align-items-center');
+    square.innerHTML = `<span>${number}</span>`;
+}
