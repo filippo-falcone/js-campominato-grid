@@ -19,13 +19,25 @@
 */
 /* VARIABLES */
 const playButton = document.querySelector('#play-btn');
+const mainContainer = document.querySelector('.ms-container');
+const mainGrid = document.querySelector('#ms-grid');
+let numberSquare = 100
 /* EVENTS */
 playButton.addEventListener('click', function () {
-    const mainGrid = document.querySelector('#ms-grid');
-    mainGrid.classList.remove('d-none');
-    for (let i = 1; i <= 100; i++) {
+    const footer = document.querySelector('footer');
+    footer.classList.remove('d-none');
+    footer.classList.add('d-flex');
+    mainContainer.classList.remove('d-none');
+    mainGrid.innerHTML = '';
+    for (let i = 1; i <= numberSquare; i++) {
         const square = createSquare(i);
         mainGrid.append(square);
+        square.addEventListener('click', function () {
+            this.classList.add('bg-primary');
+            setTimeout(function () {
+                alert(`Hai selezionato il quadrato: ${i}`);
+            }, 1);
+        });
     }
 });
 /* FUNCTIONS */

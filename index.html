@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar bg-light">
+    <header class="bg-light position-sticky top-0 z-1">
+        <nav class="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex" href="#">
                     <img src="img/boolean-logo.png" alt="Boolean" width="50" height="50">
@@ -24,9 +24,9 @@
             </div>
         </nav>
     </header>
-    <main class="bg-success">
-        <div class="container">
-            <div class="row align-content-start mx-auto d-none" id="ms-grid">
+    <main class="bg-success overflow-auto h-100">
+        <div class="ms-container container py-5 d-none">
+            <div class="row align-item-start justify-content-center" id="ms-grid">
                 <!-- <div class="ms-square ms-square-easy d-flex justify-content-center align-items-center">
                     <span>1</span>
                 </div> -->
@@ -34,6 +34,9 @@
         </div>
         </div>
     </main>
+    <footer class="d-none align-items-center ps-3 py-3 bg-light position-sticky bottom-0 z-1">
+        <div>Made width❤️ by <a href="#">Boolean</a></div>
+    </footer>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

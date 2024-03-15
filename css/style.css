@@ -1,6 +1,11 @@
-#ms-grid {
-    width: 37.5rem;
-    height: 37.5rem;
+body {
+    height: 100dvh;
+}
+
+#ms-grid,
+.ms-container {
+    width: 25rem;
+    height: 25rem;
 }
 
 .ms-square {
@@ -20,4 +25,13 @@
 .ms-square-hard {
     width: calc(100% / 7);
     height: calc(100% / 7);
+}
+
+@media screen and (min-width: 768px) {
+
+    #ms-grid,
+    .ms-container {
+        width: 37.5rem;
+        height: 37.5rem;
+    }
 }
