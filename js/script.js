@@ -23,6 +23,10 @@ const playButton = document.querySelector('#play-btn');
 playButton.addEventListener('click', function () {
     const mainGrid = document.querySelector('#ms-grid');
     mainGrid.classList.remove('d-none');
+    for (let i = 1; i <= 100; i++) {
+        const square = createSquare(i);
+        mainGrid.append(square);
+    }
 });
 /* FUNCTIONS */
 // Funzione che genera un quadrato
