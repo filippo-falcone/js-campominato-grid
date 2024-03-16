@@ -10,6 +10,10 @@ footer {
     height: 3.5rem;
 }
 
+.ms-select {
+    width: 8rem;
+}
+
 #ms-grid,
 .ms-container {
     width: 20rem;
@@ -36,6 +40,9 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
+    .ms-select {
+        width: 10rem;
+    }
 
     #ms-grid,
     .ms-container {
@@ -45,6 +52,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .ms-select {
+        width: 20rem;
+    }
 
     #ms-grid,
     .ms-container {

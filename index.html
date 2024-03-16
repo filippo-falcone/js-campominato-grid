@@ -20,7 +20,15 @@
                     <img src="img/boolean-logo.png" alt="Boolean" width="50" height="50">
                     <h1 class="fw-bold ps-2">Campo minato</h1>
                 </a>
-                <button class="btn btn-primary" id="play-btn" type="submit">Play</button>
+                <div class="d-flex">
+                    <select class="ms-select form-select" aria-label="Default select example" id="difficulty">
+                        <option selected>Difficoltà</option>
+                        <option value="easy">Facile</option>
+                        <option value="medium">Medio</option>
+                        <option value="hard">Difficile</option>
+                    </select>
+                    <button class="btn btn-primary ms-1" id="play-btn" type="submit">Play</button>
+                </div>
             </div>
         </nav>
     </header>
