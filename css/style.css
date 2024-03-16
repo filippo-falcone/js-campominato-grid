@@ -11,7 +11,8 @@ footer {
 }
 
 .ms-select {
-    width: 8rem;
+    width: 0.25rem;
+    padding-right: 1.75rem;
 }
 
 #ms-grid,
@@ -42,6 +43,7 @@ footer {
 @media screen and (min-width: 576px) {
     .ms-select {
         width: 10rem;
+        padding-right: 2.25rem;
     }
 
     #ms-grid,
