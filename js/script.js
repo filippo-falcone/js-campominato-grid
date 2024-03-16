@@ -20,6 +20,7 @@
 const playButton = document.querySelector('#play-btn');
 const mainContainer = document.querySelector('.ms-container');
 const mainGrid = document.querySelector('#ms-grid');
+const square = document.createElement('div');
 /* EVENTS */
 playButton.addEventListener('click', function () {
     const footer = document.querySelector('footer');
@@ -35,7 +36,7 @@ playButton.addEventListener('click', function () {
             this.classList.add('bg-primary');
             setTimeout(function () {
                 alert(`Hai selezionato il quadrato: ${i}`);
-            }, 1);
+            }, 0);
         });
     }
 });
@@ -48,7 +49,6 @@ function createSquare(number) {
     const square = document.createElement('div');
     if (difficultySelect === 'hard') {
         square.classList.add('ms-square-hard');
-
     } else if (difficultySelect === 'medium') {
         square.classList.add('ms-square-medium');
     } else {
