@@ -47,14 +47,9 @@ playButton.addEventListener('click', function () {
 function createSquare(number) {
     const difficultySelect = document.querySelector('#difficulty').value;
     const square = document.createElement('div');
-    if (difficultySelect === 'hard') {
-        square.classList.add('ms-square-hard');
-    } else if (difficultySelect === 'medium') {
-        square.classList.add('ms-square-medium');
-    } else {
-        square.classList.add('ms-square-easy');
-    }
+    const difficultly = changeDifficulty('easy', 'medium', 'hard', 'ms-square-easy', 'ms-square-medium', 'ms-square-hard');
     square.classList.add('ms-square');
+    square.classList.add(difficultly);
     square.classList.add('d-flex');
     square.classList.add('justify-content-center');
     square.classList.add('align-items-center');
