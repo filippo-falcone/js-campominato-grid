@@ -24,12 +24,12 @@ const square = document.createElement('div');
 /* EVENTS */
 playButton.addEventListener('click', function () {
     const footer = document.querySelector('footer');
-    const difficultly = changeDifficulty('easy', 'medium', 'hard', 100, 81, 49);
+    const difficulty = changeDifficulty('easy', 'medium', 'hard', 100, 81, 49);
     footer.classList.remove('d-none');
     footer.classList.add('d-flex');
     mainContainer.classList.remove('d-none');
     mainGrid.innerHTML = '';
-    for (let i = 1; i <= difficultly; i++) {
+    for (let i = 1; i <= difficulty; i++) {
         const square = createSquare(i);
         mainGrid.append(square);
         square.addEventListener('click', function () {
@@ -47,9 +47,9 @@ playButton.addEventListener('click', function () {
 function createSquare(number) {
     const difficultySelect = document.querySelector('#difficulty').value;
     const square = document.createElement('div');
-    const difficultly = changeDifficulty('easy', 'medium', 'hard', 'ms-square-easy', 'ms-square-medium', 'ms-square-hard');
+    const difficulty = changeDifficulty('easy', 'medium', 'hard', 'ms-square-easy', 'ms-square-medium', 'ms-square-hard');
     square.classList.add('ms-square');
-    square.classList.add(difficultly);
+    square.classList.add(difficulty);
     square.classList.add('d-flex');
     square.classList.add('justify-content-center');
     square.classList.add('align-items-center');
@@ -58,17 +58,17 @@ function createSquare(number) {
 }
 // Funzione per cambiare livello di difficoltà
 // value1, value2, value3: elemento di tipo stringa che rappresenta il value nel DOM
-// number1, number2, number3: elemento di tipo numero
+// numberOrString1, numberOrString2, numberOrString3: elemento di tipo numero o stringa che rappresenta il valore che viene modificato
 // return: variabile che cambia la diffcoltà
-function changeDifficulty(value1, value2, value3, number1, number2, number3) {
+function changeDifficulty(value1, value2, value3, numberOrString1, numberOrString2, numberOrString3) {
     let difficulty;
     const difficultySelect = document.querySelector('#difficulty').value;
     if (difficultySelect === value1) {
-        difficulty = number1;
+        difficulty = numberOrString1;
     } else if (difficultySelect === value2) {
-        difficulty = number2;
+        difficulty = numberOrString2;
     } else if (difficultySelect === value3) {
-        difficulty = number3;
+        difficulty = numberOrString3;
     }
     return difficulty;
 }
