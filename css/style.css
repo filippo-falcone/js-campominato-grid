@@ -23,6 +23,7 @@ footer {
 
 .ms-square {
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .ms-square-easy {
